@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juan Perez — Portfolio</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">F57 STUDIO</a>
+      <nav class="nav">
+        <ul>
+           <li><a href="index.html">Home</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="btn btn--primary">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1><span class="accent">JAY-P</span><br/>VISUAL ARTIST</h1>
+          <p>I build bold visuals, refined editorial layouts, and narrative-driven images that give brands and individuals a distinctive voice.</p>
+          <div class="hero__cta">
+            <a href="portfolio.html" class="btn btn--primary">View Work</a>
+            <a href="contact.html" class="btn btn--ghost">Hire Me</a>
+          </div>
+        </div>
+
+       
+        <div class="hero__media">
+          <img src="assets/hero1.mp4" alt="Selected works collage" class="hero-main" />
+
+         
+          <img src="assets/work1.jpg" alt="Automotive Poster" class="thumb thumb1" />
+          <img src="assets/work2.jpg" alt="Magazine Editorial" class="thumb thumb2" />
+          <img src="assets/work3.jpg" alt="Studio Portraits" class="thumb thumb3" />
+          <img src="assets/work4.mp4" alt="Promo Video" class="thumb thumb4" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+ 
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+    <p id="lightbox-caption"></p>
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Juan Perez. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

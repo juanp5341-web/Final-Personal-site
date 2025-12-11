@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Juan Perez</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">F57 STUDIO</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="btn btn--primary">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container contact__grid">
+      <div>
+        <h1>Contact Me</h1>
+        <p>Fill out the form or reach me directly.</p>
+
+        <ul class="contact__list">
+          <li><strong>Email:</strong> 
+            <a class="no-blue" href="mailto:jayssignaturedesign@outlook.com">
+              jayssignaturedesign@outlook.com
+            </a>
+          </li>
+          <li><strong>Instagram:</strong> 
+            <a class="no-blue" href="https://instagram.com/jayssignaturedesign" target="_blank">
+              @jayssignaturedesign
+            </a>
+          </li>
+          <li><strong>Location:</strong> Houston, TX</li>
+        </ul>
+      </div>
+
+      <!-- STACKED CONTACT FORM -->
+      <form class="form contact-form" id="contactForm" novalidate>
+        <label class="form-group">
+          <span>Name</span>
+          <input type="text" name="name" required autocomplete="name" />
+        </label>
+
+        <label class="form-group">
+          <span>Email</span>
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+
+        <label class="form-group">
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Juan Perez. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS: auto updates the year -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
